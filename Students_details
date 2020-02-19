@@ -1,0 +1,4 @@
+public class Student_detail{
+
+public String name;
+public char div;
