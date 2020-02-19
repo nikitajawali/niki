@@ -1,0 +1,65 @@
+public class Student_detail
+{
+public String name;
+public double average;
+public int degree;
+static int roll_No;
+static char div;
+static String college_Name;
+
+static{
+roll_No=0;
+div='A';
+college_Name="KCCOE";
+degree="BE";
+}
+
+public double getAvg(int sci,int maths,int eng){
+average=(sci+maths+eng)/300;
+System.out.println("Average of student is :"+average);
+return average;
+}
+
+public void dis(){
+System.out.println("Name of student is :"+name);
+System.out.println("Student div is :"+div);
+System.out.println("Student college name is :"+college_Name);
+System.out.println("Student degree is :"+degree);
+}
+
+public void show(){
+System.out.println("Student roll no is :"+roll_No);
+}
+
+public Student_detail(){
+roll_No++;
+}
+
+Student_detail(String name,char div){
+this.name=name;
+this.div=div;
+}
+
+Students_Details A=new Students_Details();
+		A.name="Nikita";
+		A.dis();
+		double cr=A.getavg(78, 80,65);
+		A.show();
+		System.out.println(".......................................................");
+		Students_Details B=new Students_Details();
+		B.name="Tanu";
+		B.dis();
+		double cr1=B.getavg(80,88,46);
+		B.show();
+    System.out.println(".......................................................");
+		Students_Details C=new Students_Details();
+		C.name="Riya";
+		C.dis();
+		double cr3=C.getavg(90,88,56);
+		C.show();
+
+}
+}
+
+
+
